@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'VMOpenssl_Example' do
+  pod 'VMOpenssl', :path => '../'
+
+  target 'VMOpenssl_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
