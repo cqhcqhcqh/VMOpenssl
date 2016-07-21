@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/VMOpenssl'
+  s.homepage         = 'https://git.vmovier.cc/users/chengqihan/repos/vmopenssl/browse'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Chengqihan' => 'chengqh@vmovier.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/VMOpenssl.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://chengqihan@git.vmovier.cc/scm/~chengqihan/vmopenssl.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '7.0'
