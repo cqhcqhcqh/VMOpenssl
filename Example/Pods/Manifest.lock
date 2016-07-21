@@ -4,7 +4,9 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.2)
   - FBSnapshotTestCase/SwiftSupport (2.1.2):
     - FBSnapshotTestCase/Core
-  - VMOpenssl (0.1.0)
+  - VMOpenssl (0.1.0):
+    - VMOpenssl/OpenSSL (= 0.1.0)
+  - VMOpenssl/OpenSSL (0.1.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -16,7 +18,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
-  VMOpenssl: 8352b04a6284e29b9cffe42a0aff6268a98e081a
+  VMOpenssl: b484efe7e3cae7ec921191fd7df5047aaf1859c2
 
 PODFILE CHECKSUM: 1f3dd089f0cb366dd1bcb47a277260285ec4e6c0
 

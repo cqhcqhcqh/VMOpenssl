@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/VMOpenssl.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'VMOpenssl/Classes/**/*'
   
@@ -41,8 +41,8 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
 
     s.subspec 'OpenSSL' do |openssl|
-    openssl.preserve_paths = 'libraries/openssl-1.0.1e/include/openssl/*.h', 'libraries/openssl-1.0.1e/include/LICENSE'
-    openssl.vendored_libraries = 'libraries/openssl-1.0.1e/lib/libcrypto.a', 'libraries/openssl-1.0.1e/lib/libssl.a'
+    openssl.preserve_paths = 'VMOpenssl/Classes/OpenSSL/libraries/openssl-1.0.1e/include/openssl/*.h', 'VMOpenssl/Classes/OpenSSL/libraries/openssl-1.0.1e/include/LICENSE'
+    openssl.vendored_libraries = 'VMOpenssl/Classes/OpenSSL/libraries/openssl-1.0.1e/lib/libcrypto.a', 'VMOpenssl/Classes/OpenSSL/libraries/openssl-1.0.1e/lib/libssl.a'
     openssl.libraries = 'ssl', 'crypto'
     openssl.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/#{s.name}/libraries/openssl-1.0.1e/include/**" }
     end

@@ -16,7 +16,27 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "7.0"
   },
-  "source_files": "VMOpenssl/Classes/**/*"
+  "source_files": "VMOpenssl/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "OpenSSL",
+      "preserve_paths": [
+        "VMOpenssl/Classes/OpenSSL/libraries/openssl-1.0.1e/include/openssl/*.h",
+        "VMOpenssl/Classes/OpenSSL/libraries/openssl-1.0.1e/include/LICENSE"
+      ],
+      "vendored_libraries": [
+        "VMOpenssl/Classes/OpenSSL/libraries/openssl-1.0.1e/lib/libcrypto.a",
+        "VMOpenssl/Classes/OpenSSL/libraries/openssl-1.0.1e/lib/libssl.a"
+      ],
+      "libraries": [
+        "ssl",
+        "crypto"
+      ],
+      "xcconfig": {
+        "HEADER_SEARCH_PATHS": "${PODS_ROOT}/VMOpenssl/libraries/openssl-1.0.1e/include/**"
+      }
+    }
+  ]
 }
