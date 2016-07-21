@@ -1,0 +1,6 @@
+framework module Pods_VMOpenssl_Tests {
+  umbrella header "Pods-VMOpenssl_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

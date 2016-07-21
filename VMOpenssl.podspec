@@ -39,4 +39,12 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+    s.subspec 'OpenSSL' do |openssl|
+    openssl.preserve_paths = 'libraries/openssl-1.0.1e/include/openssl/*.h', 'libraries/openssl-1.0.1e/include/LICENSE'
+    openssl.vendored_libraries = 'libraries/openssl-1.0.1e/lib/libcrypto.a', 'libraries/openssl-1.0.1e/lib/libssl.a'
+    openssl.libraries = 'ssl', 'crypto'
+    openssl.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/#{s.name}/libraries/openssl-1.0.1e/include/**" }
+    end
+
 end

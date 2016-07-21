@@ -1,0 +1,6 @@
+framework module Pods_VMOpenssl_Example {
+  umbrella header "Pods-VMOpenssl_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

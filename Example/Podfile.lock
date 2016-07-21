@@ -1,0 +1,23 @@
+PODS:
+  - FBSnapshotTestCase (2.1.2):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.2)
+  - FBSnapshotTestCase/Core (2.1.2)
+  - FBSnapshotTestCase/SwiftSupport (2.1.2):
+    - FBSnapshotTestCase/Core
+  - VMOpenssl (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - VMOpenssl (from `../`)
+
+EXTERNAL SOURCES:
+  VMOpenssl:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
+  VMOpenssl: 8352b04a6284e29b9cffe42a0aff6268a98e081a
+
+PODFILE CHECKSUM: 1f3dd089f0cb366dd1bcb47a277260285ec4e6c0
+
+COCOAPODS: 1.0.1

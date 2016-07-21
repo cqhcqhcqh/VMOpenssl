@@ -1,0 +1,6 @@
+framework module VMOpenssl {
+  umbrella header "VMOpenssl-umbrella.h"
+
+  export *
+  module * { export * }
+}

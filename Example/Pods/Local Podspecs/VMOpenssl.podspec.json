@@ -1,0 +1,22 @@
+{
+  "name": "VMOpenssl",
+  "version": "0.1.0",
+  "summary": "A short description of VMOpenssl.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/VMOpenssl",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Chengqihan": "chengqh@vmovier.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/VMOpenssl.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "VMOpenssl/Classes/**/*"
+}
